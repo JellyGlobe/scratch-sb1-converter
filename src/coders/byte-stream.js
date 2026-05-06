@@ -1,4 +1,4 @@
-import {assert} from '../util/assert';
+import {assert} from '../util/assert.js';
 
 /**
  * Read and write a stream of {@link BytePrimitive}s, {@link Packet}s, or byte

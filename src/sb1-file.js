@@ -1,15 +1,15 @@
-import {ByteStream} from './coders/byte-stream';
+import {ByteStream} from './coders/byte-stream.js';
 
-import {ByteTakeIterator} from './squeak/byte-take-iterator';
-import {FieldIterator} from './squeak/field-iterator';
-import {TypeIterator} from './squeak/type-iterator';
-import {ReferenceFixer} from './squeak/reference-fixer';
-import {ImageMediaData, SoundMediaData} from './squeak/types';
+import {ByteTakeIterator} from './squeak/byte-take-iterator.js';
+import {FieldIterator} from './squeak/field-iterator.js';
+import {TypeIterator} from './squeak/type-iterator.js';
+import {ReferenceFixer} from './squeak/reference-fixer.js';
+import {ImageMediaData, SoundMediaData} from './squeak/types.js';
 
-import {toSb2FakeZipApi} from './to-sb2/fake-zip';
-import {toSb2Json} from './to-sb2/json-generator';
+import {toSb2FakeZipApi} from './to-sb2/fake-zip.js';
+import {toSb2Json} from './to-sb2/json-generator.js';
 
-import {SB1Header, SB1Signature} from './sb1-file-packets';
+import {SB1Header, SB1Signature} from './sb1-file-packets.js';
 
 class SB1File {
     constructor (buffer) {

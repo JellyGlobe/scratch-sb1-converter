@@ -1,6 +1,6 @@
-import {assert} from '../util/assert';
+import {assert} from '../util/assert.js';
 
-import {PNGFile} from '../coders/png-file';
+import {PNGFile} from '../coders/png-file.js';
 
 class FakeZipFile {
     constructor (file) {

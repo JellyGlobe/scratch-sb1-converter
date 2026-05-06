@@ -11,7 +11,7 @@ const {
     Int32BE,
     DoubleBE,
     FixedAsciiString
-} = require('../../src/coders/byte-primitives');
+} = require('../../src/coders/byte-primitives.js');
 
 test('spec', t => {
     t.type(BytePrimitive, 'function');

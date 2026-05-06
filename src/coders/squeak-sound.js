@@ -1,7 +1,7 @@
-import {assert} from '../util/assert';
+import {assert} from '../util/assert.js';
 
-import {Uint8} from './byte-primitives';
-import {ByteStream} from './byte-stream';
+import {Uint8} from './byte-primitives.js';
+import {ByteStream} from './byte-stream.js';
 
 const SQUEAK_SOUND_STEP_SIZE_TABLE = [
     7, 8, 9, 10, 11, 12, 13, 14, 16, 17, 19, 21, 23, 25, 28, 31, 34, 37, 41,

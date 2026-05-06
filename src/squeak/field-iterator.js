@@ -1,11 +1,11 @@
-import {Uint8, Int16BE, Int32BE, DoubleBE} from '../coders/byte-primitives';
-import {ByteStream} from '../coders/byte-stream';
+import {Uint8, Int16BE, Int32BE, DoubleBE} from '../coders/byte-primitives.js';
+import {ByteStream} from '../coders/byte-stream.js';
 
 import {
     ReferenceBE, LargeInt, AsciiString, UTF8, Bytes, SoundBytes, Bitmap32BE, OpaqueColor, TranslucentColor
-} from './byte-primitives';
-import {BuiltinObjectHeader, FieldObjectHeader, Header, Reference, Value} from './fields';
-import {TYPES} from './ids';
+} from './byte-primitives.js';
+import {BuiltinObjectHeader, FieldObjectHeader, Header, Reference, Value} from './fields.js';
+import {TYPES} from './ids.js';
 
 /**
  * Consume values for the byte stream with a iterator-like interface.

@@ -1,5 +1,5 @@
-import {Packet} from './byte-packets';
-import {Uint16LE, Uint32LE, FixedAsciiString} from './byte-primitives';
+import {Packet} from './byte-packets.js';
+import {Uint16LE, Uint32LE, FixedAsciiString} from './byte-primitives.js';
 
 class WAVESignature extends Packet.extend({
     riff: new FixedAsciiString(4),

@@ -1,6 +1,6 @@
-import {FieldObjectHeader, Header} from './fields';
-import {FieldObject} from './field-object';
-import {FIELD_OBJECT_CONTRUCTORS} from './types';
+import {FieldObjectHeader, Header} from './fields.js';
+import {FieldObject} from './field-object.js';
+import {FIELD_OBJECT_CONTRUCTORS} from './types.js';
 
 class TypeIterator {
     constructor (valueIterator) {

@@ -1,6 +1,6 @@
 const test = require('tap').test;
 
-const {CRC32} = require('../../src/coders/crc32');
+const {CRC32} = require('../../src/coders/crc32.js');
 
 test('spec', t => {
     const instance = new CRC32();

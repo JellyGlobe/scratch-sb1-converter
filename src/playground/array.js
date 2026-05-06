@@ -1,4 +1,4 @@
-import {assert} from '../util/assert';
+import {assert} from '../util/assert.js';
 
 class SB1ArrayAbstractView {
     constructor (array, start, end) {

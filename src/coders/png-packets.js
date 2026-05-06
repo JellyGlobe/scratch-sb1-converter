@@ -1,7 +1,7 @@
-import {assert} from '../util/assert';
+import {assert} from '../util/assert.js';
 
-import {Packet} from './byte-packets';
-import {Uint8, Uint32BE, FixedAsciiString} from './byte-primitives';
+import {Packet} from './byte-packets.js';
+import {Uint8, Uint32BE, FixedAsciiString} from './byte-primitives.js';
 
 class PNGSignature extends Packet.extend({
     support8Bit: Uint8,

@@ -1,4 +1,4 @@
-import {ObjectRenderer} from './object';
+import {ObjectRenderer} from './object.js';
 
 class ViewableRenderer {
     static check (data) {

@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const test = require('tap').test;
 
-const {SB1File} = require('../..');
+const {SB1File} = require('../../src/index.js');
 
 test('default', t => {
     const uri = path.resolve(__dirname, '../fixtures/valid/default.sb');

@@ -1,8 +1,8 @@
-import {TextDecoder as JSTextDecoder} from 'text-encoding';
+import {TextDecoder as JSTextDecoder} from '../util/text-encoding.js';
 
-import {assert} from '../util/assert';
+import {assert} from '../util/assert.js';
 
-import {IS_HOST_LITTLE_ENDIAN, Int16BE, BytePrimitive, Uint8, Uint32BE} from '../coders/byte-primitives';
+import {IS_HOST_LITTLE_ENDIAN, Int16BE, BytePrimitive, Uint8, Uint32BE} from '../coders/byte-primitives.js';
 
 const BUFFER_TOO_BIG = 10 * 1024 * 1024;
 

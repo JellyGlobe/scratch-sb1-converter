@@ -1,5 +1,5 @@
-import {ByteStream} from './byte-stream';
-import {WAVESignature, WAVEChunkStart, WAVEFMTChunkBody} from './wav-packets';
+import {ByteStream} from './byte-stream.js';
+import {WAVESignature, WAVEChunkStart, WAVEFMTChunkBody} from './wav-packets.js';
 
 class WAVFile {
     encode (intSamples, {channels = 1, sampleRate = 22050} = {}) {

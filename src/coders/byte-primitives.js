@@ -1,4 +1,4 @@
-import {assert} from '../util/assert';
+import {assert} from '../util/assert.js';
 
 const notImplemented = () => {
     throw new Error('Not implemented');

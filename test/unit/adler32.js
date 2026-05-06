@@ -1,6 +1,6 @@
 const test = require('tap').test;
 
-const {Adler32} = require('../../src/coders/adler32');
+const {Adler32} = require('../../src/coders/adler32.js');
 
 test('spec', t => {
     const instance = new Adler32();

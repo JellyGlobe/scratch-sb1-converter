@@ -1,9 +1,9 @@
-import {PNGFile} from '../coders/png-file';
-import {WAVFile} from '../coders/wav-file';
+import {PNGFile} from '../coders/png-file.js';
+import {WAVFile} from '../coders/wav-file.js';
 
-import {FieldObject} from '../squeak/field-object';
+import {FieldObject} from '../squeak/field-object.js';
 
-import {ObjectRenderer} from './object';
+import {ObjectRenderer} from './object.js';
 
 const allPropertyDescriptors = prototype => {
     if (prototype === null) return {};

@@ -1,6 +1,6 @@
 const test = require('tap').test;
 
-const SB1 = require('../..');
+const SB1 = require('../../src/index.js');
 
 test('spec', t => {
     t.type(SB1, Object);

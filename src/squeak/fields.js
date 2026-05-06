@@ -1,4 +1,4 @@
-import {TYPES} from './ids';
+import {TYPES} from './ids.js';
 
 /**
  * An abstract value contained in a `.sb` file.

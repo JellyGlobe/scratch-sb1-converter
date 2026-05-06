@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     extends: 'scratch-semantic-release-config',
     branches: [
         {

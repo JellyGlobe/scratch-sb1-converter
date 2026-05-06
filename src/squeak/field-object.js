@@ -1,4 +1,4 @@
-import {TYPE_NAMES} from './ids';
+import {TYPE_NAMES} from './ids.js';
 
 const toTitleCase = str => (
     str.toLowerCase().replace(/_(\w)/g, ([, letter]) => letter.toUpperCase())

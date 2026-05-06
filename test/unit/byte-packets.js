@@ -1,7 +1,7 @@
 const test = require('tap').test;
 
-const {Packet} = require('../../src/coders/byte-packets');
-const {Uint8, Uint16LE} = require('../../src/coders/byte-primitives');
+const {Packet} = require('../../src/coders/byte-packets.js');
+const {Uint8, Uint16LE} = require('../../src/coders/byte-primitives.js');
 
 test('spec', t => {
     t.type(Packet, 'function');

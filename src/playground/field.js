@@ -1,5 +1,5 @@
-import {Field, Header, Reference, Value} from '../squeak/fields';
-import {TYPES, TYPE_NAMES} from '../squeak/ids';
+import {Field, Header, Reference, Value} from '../squeak/fields.js';
+import {TYPES, TYPE_NAMES} from '../squeak/ids.js';
 
 class FieldRenderer {
     static check (data) {

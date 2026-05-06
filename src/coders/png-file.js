@@ -1,7 +1,7 @@
-import {ByteStream} from './byte-stream';
-import {PNGSignature, PNGIHDRChunkBody, PNGFilterMethodByte} from './png-packets';
-import {DeflateStream} from './deflate-stream';
-import {PNGChunkStream} from './png-chunk-stream';
+import {ByteStream} from './byte-stream.js';
+import {PNGSignature, PNGIHDRChunkBody, PNGFilterMethodByte} from './png-packets.js';
+import {DeflateStream} from './deflate-stream.js';
+import {PNGChunkStream} from './png-chunk-stream.js';
 
 class PNGFile {
     encode (width, height, pixelsUint8) {

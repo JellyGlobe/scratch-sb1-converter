@@ -1,6 +1,6 @@
 /* eslint no-use-before-define:1 */
 
-import {ImageMediaData, SoundMediaData, StageData, SpriteData} from '../squeak/types';
+import {ImageMediaData, SoundMediaData, StageData, SpriteData} from '../squeak/types.js';
 import md5 from 'js-md5';
 
 // https://github.com/LLK/scratch-flash/blob/cb5f42f039ef633710faf9c63b69e8368b280372/src/blocks/BlockIO.as#L292-L308

@@ -1,7 +1,7 @@
-import {assert} from './util/assert';
+import {assert} from './util/assert.js';
 
-import {Packet} from './coders/byte-packets';
-import {FixedAsciiString, Uint8, Uint32BE} from './coders/byte-primitives';
+import {Packet} from './coders/byte-packets.js';
+import {FixedAsciiString, Uint8, Uint32BE} from './coders/byte-primitives.js';
 
 /**
  * @augments Packet

@@ -1,7 +1,7 @@
-import {Uint32BE} from './byte-primitives';
-import {CRC32} from './crc32';
-import {PNGChunkStart, PNGChunkEnd} from './png-packets';
-import {ProxyStream} from './proxy-stream';
+import {Uint32BE} from './byte-primitives.js';
+import {CRC32} from './crc32.js';
+import {PNGChunkStart, PNGChunkEnd} from './png-packets.js';
+import {ProxyStream} from './proxy-stream.js';
 
 class PNGChunkStream extends ProxyStream {
     constructor (stream, chunkType = 'IHDR') {

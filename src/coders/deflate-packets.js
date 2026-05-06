@@ -1,5 +1,5 @@
-import {Packet} from './byte-packets';
-import {Uint8, Uint16LE, Uint32LE} from './byte-primitives';
+import {Packet} from './byte-packets.js';
+import {Uint8, Uint16LE, Uint32LE} from './byte-primitives.js';
 
 const DEFLATE_BLOCK_SIZE_MAX = 0xffff;
 

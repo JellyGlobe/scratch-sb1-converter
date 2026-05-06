@@ -10,7 +10,7 @@ module.exports = {
         port: process.env.PORT || 8093
     },
     entry: {
-        main: './index.js',
+        main: './src/index.js',
         view: './src/playground/index.js'
     },
     output: {

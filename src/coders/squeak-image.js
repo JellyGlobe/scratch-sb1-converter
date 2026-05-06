@@ -1,5 +1,5 @@
-import {BytePrimitive, Uint8, Uint32BE} from './byte-primitives';
-import {ByteStream} from './byte-stream';
+import {BytePrimitive, Uint8, Uint32BE} from './byte-primitives.js';
+import {ByteStream} from './byte-stream.js';
 
 const defaultColorMap = [
     0x00000000, 0xFF000000, 0xFFFFFFFF, 0xFF808080, 0xFFFF0000, 0xFF00FF00, 0xFF0000FF, 0xFF00FFFF,

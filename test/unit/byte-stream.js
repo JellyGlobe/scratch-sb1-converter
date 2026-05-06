@@ -1,8 +1,8 @@
 const test = require('tap').test;
 
-const {ByteStream} = require('../../src/coders/byte-stream');
-const {Packet} = require('../../src/coders/byte-packets');
-const {Uint8} = require('../../src/coders/byte-primitives');
+const {ByteStream} = require('../../src/coders/byte-stream.js');
+const {Packet} = require('../../src/coders/byte-packets.js');
+const {Uint8} = require('../../src/coders/byte-primitives.js');
 
 test('spec', t => {
     t.type(ByteStream, 'function');

@@ -1,6 +1,6 @@
-import {Adler32} from './adler32';
-import {DEFLATE_BLOCK_SIZE_MAX, DeflateHeader, DeflateChunkStart, DeflateEnd} from './deflate-packets';
-import {ProxyStream} from './proxy-stream';
+import {Adler32} from './adler32.js';
+import {DEFLATE_BLOCK_SIZE_MAX, DeflateHeader, DeflateChunkStart, DeflateEnd} from './deflate-packets.js';
+import {ProxyStream} from './proxy-stream.js';
 
 class DeflateStream extends ProxyStream {
     constructor (stream) {

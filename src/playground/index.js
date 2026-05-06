@@ -1,12 +1,12 @@
-import {SB1File} from '../..';
-import {SB1View} from './view';
+import {SB1File} from '../index.js';
+import {SB1View} from './view.js';
 
-import {ArrayRenderer} from './array';
-import {FieldObjectRenderer} from './field-object';
-import {FieldRenderer} from './field';
-import {JSPrimitiveRenderer} from './js-primitive';
-import {ObjectRenderer} from './object';
-import {ViewableRenderer} from './viewable';
+import {ArrayRenderer} from './array.js';
+import {FieldObjectRenderer} from './field-object.js';
+import {FieldRenderer} from './field.js';
+import {JSPrimitiveRenderer} from './js-primitive.js';
+import {ObjectRenderer} from './object.js';
+import {ViewableRenderer} from './viewable.js';
 
 SB1View.register(ArrayRenderer);
 SB1View.register(FieldObjectRenderer);

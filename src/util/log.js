@@ -1,3 +1,3 @@
-const minilog = require('minilog');
+import minilog from 'minilog';
 
-module.exports = new minilog('sb1-converter');
+export default new minilog('sb1-converter');

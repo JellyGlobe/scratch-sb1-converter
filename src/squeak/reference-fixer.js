@@ -1,4 +1,4 @@
-import {Reference} from './fields';
+import {Reference} from './fields.js';
 
 class ReferenceFixer {
     constructor (table) {

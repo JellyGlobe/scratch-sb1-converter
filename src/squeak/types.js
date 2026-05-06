@@ -1,11 +1,11 @@
-import {CRC32} from '../coders/crc32';
-import {SqueakImage} from '../coders/squeak-image';
-import {SqueakSound} from '../coders/squeak-sound';
-import {WAVFile} from '../coders/wav-file';
+import {CRC32} from '../coders/crc32.js';
+import {SqueakImage} from '../coders/squeak-image.js';
+import {SqueakSound} from '../coders/squeak-sound.js';
+import {WAVFile} from '../coders/wav-file.js';
 
-import {FieldObject} from './field-object';
-import {value as valueOf} from './fields';
-import {TYPES} from './ids';
+import {FieldObject} from './field-object.js';
+import {value as valueOf} from './fields.js';
+import {TYPES} from './ids.js';
 
 import md5 from 'js-md5';
 

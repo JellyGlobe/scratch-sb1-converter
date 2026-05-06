@@ -9,8 +9,10 @@
     "type": "git",
     "url": "https://github.com/scratchfoundation/scratch-sb1-converter.git"
   },
-  "main": "playground/main.js",
-  "browser": "index.js",
+  "main": "./playground/main.js",
+  "browser": "./src/index.js",
+  "module": "./src/index.js",
+  "type": "module",
   "scripts": {
     "build": "npm run docs && webpack --progress --colors --bail",
     "commitmsg": "commitlint -e $GIT_PARAMS",
