@@ -140,7 +140,7 @@ test('DoubleBE', t => {
     t.type(DoubleBE.toBytes, 'object');
 
     const bytes = new Uint8Array([1, 0, 0, 0, 0, 0, 0, 0, 0]);
-    t.true(DoubleBE.read(bytes, 0) > 0);
+    t.equal(DoubleBE.read(bytes, 0) > 0, true);
     t.throws(() => {
         DoubleBE.write(bytes, 0, -1);
     });

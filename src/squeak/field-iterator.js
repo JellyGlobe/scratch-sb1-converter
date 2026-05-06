@@ -13,7 +13,7 @@ import {TYPES} from './ids';
 class Consumer {
     /**
      * @param {object} options - Define the consumer.
-     * @param {function} [options.type=Value] - The {@link Field} type to
+     * @param {function} [options.type] - The {@link Field} type to
      * create.
      * @param {BytePrimitive} options.read - How to read the third Field
      * argument. The third field argument is the value the field represented in
@@ -48,7 +48,7 @@ class Consumer {
 }
 
 /**
- * @const CONSUMER_PROTOS
+ * @constant CONSUMER_PROTOS
  * @type {Object.<number, {type, read, value}>}
  */
 const CONSUMER_PROTOS = {
@@ -88,7 +88,7 @@ const CONSUMER_PROTOS = {
 };
 
 /**
- * @const CONSUMERS
+ * @constant CONSUMERS
  * @type {Array.<Consumer|null>}
  */
 const CONSUMERS = Array.from(

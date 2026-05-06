@@ -26,7 +26,7 @@
  */
 class Packet {
     /**
-     * @param {Uint8Array=} [uint8a=new Uint8Array(this.size)] - byte array to
+     * @param {Uint8Array=} [uint8a] - byte array to
      * encode to and decode from
      * @param {number=} offset - offset in addition to the member offsets to
      * encode to and decode from

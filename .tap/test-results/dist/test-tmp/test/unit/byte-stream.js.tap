@@ -1,0 +1,61 @@
+TAP version 14
+# Subtest: spec
+    ok 1 - type is function
+    ok 2 - type is object
+    ok 3 - type is number
+    ok 4 - type is object
+    ok 5 - type is function
+    ok 6 - type is function
+    ok 7 - type is function
+    ok 8 - type is function
+    ok 9 - type is function
+    ok 10 - type is function
+    1..10
+ok 1 - spec # time=9.81ms
+
+# Subtest: read
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - type is undefined
+    1..4
+ok 2 - read # time=0.883ms
+
+# Subtest: readStruct
+    ok 1 - type is object
+    1..1
+ok 3 - readStruct # time=0.529ms
+
+# Subtest: resize
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    1..3
+ok 4 - resize # time=0.792ms
+
+# Subtest: write
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - type is undefined
+    1..5
+ok 5 - write # time=2.415ms
+
+# Subtest: writeStruct
+    ok 1 - type is object
+    1..1
+ok 6 - writeStruct # time=0.533ms
+
+# Subtest: writeBytes
+    ok 1 - type is object
+    ok 2 - should be equal
+    1..2
+ok 7 - writeBytes # time=0.686ms
+
+# Subtest: writeBytes (invalid)
+    ok 1 - expected to throw
+    1..1
+ok 8 - writeBytes (invalid) # time=1.146ms
+
+1..8

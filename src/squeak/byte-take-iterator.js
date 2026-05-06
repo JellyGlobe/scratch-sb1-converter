@@ -11,7 +11,7 @@
 class ByteTakeIterator {
     /**
      * @param {{stream: ByteStream}} iter - Iterator with `stream` member.
-     * @param {number} [maxPosition=Infinity] - Position `stream` may not go
+     * @param {number} [maxPosition] - Position `stream` may not go
      * beyond when yielding the next value.
      */
     constructor (iter, maxPosition = Infinity) {

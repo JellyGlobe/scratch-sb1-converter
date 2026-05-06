@@ -6,7 +6,7 @@ const notImplemented = () => {
 
 /**
  * Is the host computer little or big endian.
- * @const IS_HOST_LITTLE_ENDIAN
+ * @constant IS_HOST_LITTLE_ENDIAN
  * @type {boolean}
  */
 const IS_HOST_LITTLE_ENDIAN = (() => {
@@ -46,17 +46,17 @@ const IS_HOST_LITTLE_ENDIAN = (() => {
  */
 class BytePrimitive {
     /**
-     * @constructor
+     * @class
      * @param {object} options - Options to initialize BytePrimitive instance
      * with.
-     * @param {number} [options.size=0] - Fixed size of the BytePrimitive.
+     * @param {number} [options.size] - Fixed size of the BytePrimitive.
      * Should be 0 if the primitive has a variable size.
-     * @param {BytePrimitive~sizeOfCallback} [options.sizeOf=() => size] -
+     * @param {BytePrimitive~sizeOfCallback} [options.sizeOf] -
      * Variable size of the primitive depending on its value stored in the
      * array.
      * @param {BytePrimitive~writeSizeOfCallback} [options.writeSizeOf] -
      * Variable size of the primitive depending on the value being written.
-     * @param {TypedArray} [options.toBytes=new Uint8Array(1)] - Temporary
+     * @param {TypedArray} [options.toBytes] - Temporary
      * space to copy bytes to/from to translate between a value and its
      * representative byte set.
      * @param {BytePrimitive#read} options.read - How is a value read
@@ -120,7 +120,7 @@ class BytePrimitive {
 }
 
 /**
- * @const Uint8
+ * @constant Uint8
  * @type {BytePrimitive}
  */
 const Uint8 = new BytePrimitive({
@@ -173,7 +173,7 @@ if (IS_HOST_LITTLE_ENDIAN) {
 }
 
 /**
- * @const Uint16BE
+ * @constant Uint16BE
  * @type {BytePrimitive}
  */
 const Uint16BE = new BytePrimitive(Object.assign({}, BE16, {
@@ -181,7 +181,7 @@ const Uint16BE = new BytePrimitive(Object.assign({}, BE16, {
 }));
 
 /**
- * @const Int16BE
+ * @constant Int16BE
  * @type {BytePrimitive}
  */
 const Int16BE = new BytePrimitive(Object.assign({}, BE16, {
@@ -236,7 +236,7 @@ if (IS_HOST_LITTLE_ENDIAN) {
 }
 
 /**
- * @const Int32BE
+ * @constant Int32BE
  * @type {BytePrimitive}
  */
 const Int32BE = new BytePrimitive(Object.assign({}, BE32, {
@@ -244,7 +244,7 @@ const Int32BE = new BytePrimitive(Object.assign({}, BE32, {
 }));
 
 /**
- * @const Uint32BE
+ * @constant Uint32BE
  * @type {BytePrimitive}
  */
 const Uint32BE = new BytePrimitive(Object.assign({}, BE32, {
@@ -259,7 +259,7 @@ if (IS_HOST_LITTLE_ENDIAN) {
 }
 
 /**
- * @const Uint16LE
+ * @constant Uint16LE
  * @type {BytePrimitive}
  */
 const Uint16LE = new BytePrimitive(Object.assign({}, LE16, {
@@ -274,7 +274,7 @@ if (IS_HOST_LITTLE_ENDIAN) {
 }
 
 /**
- * @const Uint32LE
+ * @constant Uint32LE
  * @type {BytePrimitive}
  */
 const Uint32LE = new BytePrimitive(Object.assign({}, LE32, {
@@ -319,7 +319,7 @@ if (IS_HOST_LITTLE_ENDIAN) {
 }
 
 /**
- * @const DoubleBE
+ * @constant DoubleBE
  * @type {BytePrimitive}
  */
 const DoubleBE = new BytePrimitive(Object.assign({}, BEDOUBLE, {
@@ -327,7 +327,7 @@ const DoubleBE = new BytePrimitive(Object.assign({}, BEDOUBLE, {
 }));
 
 /**
- * @extends BytePrimitive
+ * @augments BytePrimitive
  */
 class FixedAsciiString extends BytePrimitive {
     /**

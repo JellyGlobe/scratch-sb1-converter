@@ -12,11 +12,11 @@ test('default', t => {
     const json = sb1.json;
 
     t.type(json, Object);
-    t.deepEqual(json.variables, []);
-    t.deepEqual(json.lists, []);
-    t.deepEqual(json.scripts, []);
+    t.strictSame(json.variables, []);
+    t.strictSame(json.lists, []);
+    t.strictSame(json.scripts, []);
 
-    t.true(Array.isArray(json.costumes));
+    t.equal(Array.isArray(json.costumes), true);
     t.equal(json.costumes[0].costumeName, 'background1');
     t.equal(json.costumes[0].baseLayerID, 0);
     t.equal(json.costumes[0].baseLayerMD5, 'be2aa84eeac485ab8d9ca51294cd926e.png');
@@ -24,7 +24,7 @@ test('default', t => {
     t.equal(json.costumes[0].rotationCenterX, 240);
     t.equal(json.costumes[0].rotationCenterY, 180);
 
-    t.true(Array.isArray(json.sounds));
+    t.equal(Array.isArray(json.sounds), true);
     t.equal(json.sounds[0].soundName, 'pop');
     t.equal(json.sounds[0].soundID, 0);
     t.equal(json.sounds[0].md5, '83a9787d4cb6f3b7632b4ddfebf74367.wav');
@@ -32,7 +32,7 @@ test('default', t => {
     t.equal(json.sounds[0].rate, 11025);
     t.equal(json.sounds[0].format, '');
 
-    t.true(Array.isArray(json.children));
+    t.equal(Array.isArray(json.children), true);
     t.equal(json.children[0].objName, 'Sprite1');
     t.equal(json.children[0].currentCostumeIndex, 0);
     t.equal(json.children[0].scratchX, 0);
@@ -43,10 +43,10 @@ test('default', t => {
     t.equal(json.children[0].isDraggable, false);
     t.equal(json.children[0].indexInLibrary, 0);
     t.equal(json.children[0].visible, true);
-    t.deepEqual(json.children[0].variables, []);
-    t.deepEqual(json.children[0].lists, []);
-    t.deepEqual(json.children[0].scripts, []);
-    t.deepEqual(json.children[0].costumes, [
+    t.strictSame(json.children[0].variables, []);
+    t.strictSame(json.children[0].lists, []);
+    t.strictSame(json.children[0].scripts, []);
+    t.strictSame(json.children[0].costumes, [
         {
             baseLayerID: 1,
             baseLayerMD5: '87b6d14fce8842fb56155dc7f6496308.png',
@@ -64,7 +64,7 @@ test('default', t => {
             rotationCenterY: 55
         }
     ]);
-    t.deepEqual(json.children[0].sounds, [
+    t.strictSame(json.children[0].sounds, [
         {
             format: '',
             md5: '83c36d806dc92327b9e7049a565c6bff.wav',

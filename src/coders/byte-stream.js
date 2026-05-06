@@ -7,7 +7,7 @@ import {assert} from '../util/assert';
 class ByteStream {
     /**
      * @param {ArrayBuffer} buffer - The ArrayBuffer to read from or write to.
-     * @param {number=} [position=0] - The position to start reading or writing
+     * @param {number=} [position] - The position to start reading or writing
      * from in the ArrayBuffer.
      */
     constructor (buffer, position = 0) {
@@ -121,8 +121,8 @@ class ByteStream {
      * Write bytes from the given Uint8Array array to the stream and increment
      * the position.
      * @param {Uint8Array} bytes - Bytes to write to the stream.
-     * @param {number=} [start=0] - Where in bytes to start writing from.
-     * @param {number=} [end=bytes.length] - Where in bytes to stop writing, excluding position at bytes[end].
+     * @param {number=} [start] - Where in bytes to start writing from.
+     * @param {number=} [end] - Where in bytes to stop writing, excluding position at bytes[end].
      * @returns {Uint8Array} Passed bytes Uint8Array.
      */
     writeBytes (bytes, start = 0, end = bytes.length) {

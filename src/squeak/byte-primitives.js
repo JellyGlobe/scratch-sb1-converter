@@ -7,7 +7,7 @@ import {IS_HOST_LITTLE_ENDIAN, Int16BE, BytePrimitive, Uint8, Uint32BE} from '..
 const BUFFER_TOO_BIG = 10 * 1024 * 1024;
 
 /**
- * @const ReferenceBE
+ * @constant ReferenceBE
  * @type BytePrimitive
  */
 let ReferenceBE;
@@ -36,7 +36,7 @@ if (IS_HOST_LITTLE_ENDIAN) {
 }
 
 /**
- * @const LargeInt
+ * @constant LargeInt
  * @type BytePrimitive
  */
 const LargeInt = new BytePrimitive({
@@ -57,7 +57,7 @@ const LargeInt = new BytePrimitive({
 });
 
 /**
- * @const AsciiString
+ * @constant AsciiString
  * @type BytePrimitive
  */
 const AsciiString = new BytePrimitive({
@@ -78,7 +78,7 @@ const AsciiString = new BytePrimitive({
 });
 
 /**
- * @const Bytes
+ * @constant Bytes
  * @type BytePrimitive
  */
 const Bytes = new BytePrimitive({
@@ -96,7 +96,7 @@ const Bytes = new BytePrimitive({
 });
 
 /**
- * @const SoundBytes
+ * @constant SoundBytes
  * @type BytePrimitive
  */
 const SoundBytes = new BytePrimitive({
@@ -115,7 +115,7 @@ const SoundBytes = new BytePrimitive({
 });
 
 /**
- * @const Bitmap32BE
+ * @constant Bitmap32BE
  * @type BytePrimitive
  */
 const Bitmap32BE = new BytePrimitive({
@@ -145,7 +145,7 @@ if (typeof TextDecoder === 'undefined') {
 }
 
 /**
- * @const UTF8
+ * @constant UTF8
  * @type BytePrimitive
  */
 const UTF8 = new BytePrimitive({
@@ -163,7 +163,7 @@ const UTF8 = new BytePrimitive({
 });
 
 /**
- * @const OpaqueColor
+ * @constant OpaqueColor
  * @type BytePrimitive
  */
 const OpaqueColor = new BytePrimitive({
@@ -179,7 +179,7 @@ const OpaqueColor = new BytePrimitive({
 });
 
 /**
- * @const TranslucentColor
+ * @constant TranslucentColor
  * @type BytePrimitive
  */
 const TranslucentColor = new BytePrimitive({

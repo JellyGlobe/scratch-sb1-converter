@@ -23,7 +23,7 @@ class SB1Signature extends Packet.extend({
 }) {
     /**
      * Is this a valid SB1Signature?
-     * @method
+     * @function
      * @throws {AssertionError} Throws if it is not valid.
      */
     validate () {

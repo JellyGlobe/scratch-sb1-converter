@@ -36,7 +36,7 @@ const valueOf = obj => {
 
 /**
  * A concrete value contained in a `.sb` file.
- * @extends Field
+ * @augments Field
  */
 class Value extends Field {
     /**
@@ -82,7 +82,7 @@ class Value extends Field {
  * The `size` of a header is the number of Fields that appear in the byte
  * stream after the header that are related to the header. That set of `size`
  * length Fields make up a FieldObject of `classId` passed to this header.
- * @extends Field
+ * @augments Field
  */
 class Header extends Field {
     /**
@@ -104,7 +104,7 @@ class Header extends Field {
 /**
  * A integer reference of an object in an array produced by TypeIterator of
  * Values and FieldObjects.
- * @extends Field
+ * @augments Field
  */
 class Reference extends Field {
     /**
@@ -129,7 +129,7 @@ class Reference extends Field {
 
 /**
  * An object header of 0 size.
- * @extends Header
+ * @augments Header
  */
 class BuiltinObjectHeader extends Header {
     constructor (classId, position) {
@@ -142,7 +142,7 @@ class BuiltinObjectHeader extends Header {
  * An object header with an id more than 99, a version, and a size. The version
  * and size appear in the `sb` file as one byte for version followed by another
  * byte for the size.
- * @extends Header
+ * @augments Header
  */
 class FieldObjectHeader extends Header {
     /**

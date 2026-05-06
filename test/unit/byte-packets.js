@@ -19,25 +19,25 @@ test('spec', t => {
 
 test('equals (true)', t => {
     const packet = new Packet();
-    t.true(packet.equals({
+    t.equal(packet.equals({
         offset: 0
-    }));
+    }), true);
     t.end();
 });
 
 test('equals (false)', t => {
     const packet = new Packet();
-    t.false(packet.equals({
+    t.equal(packet.equals({
         offset: 1
-    }));
+    }), false);
     t.end();
 });
 
 test('equals (undefined)', t => {
     const packet = new Packet();
-    t.false(packet.equals({
+    t.equal(packet.equals({
         foo: 'bar'
-    }));
+    }), false);
     t.end();
 });
 

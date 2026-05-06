@@ -10,7 +10,7 @@ import {TYPES} from './ids';
 import md5 from 'js-md5';
 
 /**
- * @extends FieldObject
+ * @augments FieldObject
  */
 class PointData extends FieldObject.define({
     /**
@@ -56,7 +56,7 @@ const _bgra2rgbaInPlace = uint8a => {
 };
 
 /**
- * @extends FieldObject
+ * @augments FieldObject
  */
 class ImageData extends FieldObject.define({
     /**
